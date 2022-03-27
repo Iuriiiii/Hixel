@@ -1,0 +1,33 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "cross-env": "^7.0",
+        "laravel-echo": "^1.10.0",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.19",
+        "opus-media-recorder": "^0.8.0",
+        "pusher-js": "^7.0.2",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.26.11",
+        "sass-loader": "^8.0.2",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "js-bbcode-parser": "^3.0.4",
+        "jszip": "^3.5.0",
+        "lazyload": "^2.0.0-rc.2",
+        "magic-scroll.js": "^1.0.8",
+        "particles.js": "^2.0.0",
+        "tippy.js": "^6.2.7"
+    }
+}

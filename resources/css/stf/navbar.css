@@ -1,0 +1,183 @@
+#navbar-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #290054;
+    box-shadow: 0 2px 3px 0 #000;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    z-index:1;
+}
+
+header a {
+	max-width:100%;
+	color: #FFF;
+}
+
+.boards a {
+    font-size: 20px;
+}
+
+.boards a:hover {
+    color: rgb(104, 135, 238);
+}
+
+.links {
+    list-style: none;
+    color: #fff;
+}
+
+.links li, .boards {
+    font-size: 17px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.links li:hover, .menu-bar:hover {
+    cursor: pointer;
+    color: #b8edff;
+}
+
+#btn-menu {
+	display: none;
+}
+
+li.menu-bar {
+	display: none;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+#nav-post {
+    animation: rainbow 10s linear;
+    animation-iteration-count: infinite;
+}
+
+.notify-modal {
+    display:none;
+    top:55px;
+    position:fixed;
+    background-color:#463E3F;
+    right:25px;
+	padding: 0px 10px 10px 10px;
+	z-index: 1;
+}
+
+.notify-modal a {
+    color:white;
+}
+
+.notify-modal a div {
+    padding-top:5px;
+}
+
+.notify-modal a .title {
+    color:#E8ADAA;
+	margin-bottom:1px;
+    font-weight: bold;
+}
+
+.notify-modal-counter {
+	color: red;
+	font-size:11px;
+	font-weight: bold;
+	text-align: center;
+    right:65px;
+    top:15px;
+    position:fixed;
+    border: 0.5px solid white;
+    border-radius: 2px;
+    padding: 0.5px 2.9px;
+    top: 0.9em;
+    background: #290054;
+    z-index: 1;
+}
+
+.notify-info {
+    display:inline-block;
+    
+}
+
+.notify-thumbnail {
+    float:right;
+    margin-top:10px;
+    margin-left:10px;
+    width:32px;
+}
+
+.hr {
+	display:none;
+}
+
+/* |￣￣￣￣￣￣ | */
+
+
+/* | responsive | */
+
+
+
+/* |____________| */
+
+#choose-themes {
+		display:none;
+	}
+
+@media screen and (max-width: 950px) {
+	#choose-themes {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	#choose-themes {
+		display:none;
+	}
+	
+	li.menu-bar {
+		display: inline-block;
+		cursor: pointer;
+	}
+	
+	.boards {
+		display: none;
+		position: absolute;
+		width: 15%;
+		margin-top:10px;
+		background: #000;
+		font-size: 0px;
+		transition: all 0.8s;
+		right: 90px;
+		top: 45px;
+	}
+	
+	.boards li {
+		justify-content: center;
+		margin-top:10px;
+	}
+	
+	.boards a {
+		color: fff;
+	}
+	
+	.hr {
+		display:block;
+		border: #fff solid 0.2px;
+		margin-top: 7px;
+	}
+	
+	#btn-menu:checked ~ .boards {
+		display: block;
+		text-align: center;
+	}
+	
+	#wrapper {
+		margin-left: 8%;
+	}
+}	

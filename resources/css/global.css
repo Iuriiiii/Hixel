@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+	background:#160924;
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+}
+
+.fa-tag {
+    cursor:pointer;
+}
+
+.fa-tag:active {
+    animation:spin 500ms 1 linear;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#record-stop, #record-download, #record-audio, #record-remove {
+    display:none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 65px auto 0px auto;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f0e31; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #A37AFF; 
+  border-radius:3px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #318ddd; 
+}
+
+.play-speech, .stop-speech, .resume-speech, .pause-speech {
+	cursor: pointer;
+    display:inline-block;
+}
+
+.comments-counter li p {
+	font-family: 'Geo', sans-serif;
+	font-size:23px;
+	display:inline-block;
+	margin-left:2.5px;
+}
+
+.stop-speech, .resume-speech, .pause-speech{
+    display:none;
+}
+
+.video-bb {
+    cursor: pointer;
+    position:relative;
+}
+
+.video-bb img {
+    width:100%;
+}
+
+.play-button {
+  margin: 0 auto;
+  top: 25%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5em 0 2.5em 5em;
+  border-color: transparent transparent transparent #000;
+  opacity: .75;
+  left:42%;
+}
+
+.play-speech, .stop-speech {
+	display:inline-block;
+	margin-left: 4px;
+    margin-top: 4px;
+}
+
+.stop-speech {
+    display:none;
+}
+
+.video-bb:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.video-bb:hover .play-button {
+  opacity: 1;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    border-radius:5px;
+    display:none;
+}
+
+.alert .message{
+    display:inline-block;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.g-recaptcha {
+    display: flex;
+    flex-basis: 100%;
+    justify-content:center;
+    margin-top:10px;
+}
+
+::placeholder {
+    padding-left:5px;
+}
+
+.slf {
+    color:red;
+    text-decoration: none;
+}
+
+.slf:a:hover {
+    color:pink;
+}
